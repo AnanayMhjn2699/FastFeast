@@ -19,7 +19,7 @@ const RestaurantCard = ({
         alt="restaurant card"
       />
       <h2 className="line-clamp-1 text-center font-bold">{name}</h2>
-      <span className="flex justify-center">
+      <span className="flex justify-center font-medium">
         <h4
           className="w-6 rounded-xl ml-2"
           style={{
@@ -28,12 +28,13 @@ const RestaurantCard = ({
         >
           {avgRating}
         </h4>
-        <h4 className="mx-2"> •{sla.slaString}</h4>
+        <h4 className="mx-2"> • {sla.slaString}</h4>
       </span>
       <h4 className="line-clamp-1">{cuisines.join(", ")}</h4>
-      <h4>{areaName}</h4>
-
-      <h4>{costForTwo}</h4>
+      <span className="flex justify-between mt-3 font-light">
+        <h4>{areaName}</h4>
+        <h4>{costForTwo}</h4>
+      </span>
     </div>
   );
 };

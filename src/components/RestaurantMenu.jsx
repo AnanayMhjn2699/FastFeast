@@ -27,12 +27,12 @@ const RestaurantMenu = () => {
     <div className="text-center">
       <div className="align-middle py-5">
         <h2 className="font-bold text-3xl">{restaurant?.name}</h2>
-        <p className="text-center text-sm p-2">
+        <p className="text-center text-sm p-2 font-light">
           {restaurant?.cuisines?.join(", ")}
         </p>
         <div className="flex justify-center">
-          <div
-            className=""
+          <span
+            className="w-6 rounded-full"
             style={
               restaurant?.avgRating < 4
                 ? { backgroundColor: "#FF474C" }
@@ -41,13 +41,12 @@ const RestaurantMenu = () => {
                 : { backgroundColor: "#90EE90" }
             }
           >
-            <i className=""></i>
-            <span>{restaurant?.avgRating}</span>
-          </div>
-          <div className=""> | </div>
-          <div>{restaurant?.sla?.slaString}</div>
-          <div className=""> | </div>
-          <div>{restaurant?.costForTwoMessage}</div>
+            {restaurant?.avgRating}
+          </span>
+          <span className="mx-2"> | </span>
+          <span className="">{restaurant?.sla?.slaString} </span>
+          <span className="mx-2"> | </span>
+          <span>{restaurant?.costForTwoMessage} </span>
         </div>
       </div>
 

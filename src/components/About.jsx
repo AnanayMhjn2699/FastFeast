@@ -3,7 +3,11 @@ import food from "../images/burger-image.png";
 const About = () => {
   return (
     <div className="flex">
-      <img src={food} alt="Burger's" className="size-auto mt-10 ml-5" />
+      <img
+        src={food}
+        alt="Burger's"
+        className="h-[24.2rem] w-[32rem] mt-10 ml-5"
+      />
       <div className="justify-center ml-18 mt-10">
         <h1 className="font-bold text-3xl">
           Welcome to the world of <span>Tasty & Fresh Food</span>

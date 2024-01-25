@@ -4,7 +4,7 @@ import { useRouteError, Link } from "react-router-dom"; // import useRouteError 
 const Error = () => {
   // used useRouteError as to access error data while routing
   const err = useRouteError();
-  console.log(err);
+  //console.log(err);
   return (
     <>
       <div className="absolute size-full">

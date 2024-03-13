@@ -1,16 +1,18 @@
-import { useDispatch } from "react-redux";
-import { CDN_URL } from "../utils/constants";
-import { addItem } from "../utils/cartSlice";
+import MenuItem from "./MenuItem";
 
 const MenuItemsList = (props) => {
   //console.log(props);
-  const dispatch = useDispatch();
-  const handleAddItem = (menuCategoryItem) => {
-    dispatch(addItem(menuCategoryItem));
-  };
   return (
     <div>
       {props.data?.map((menuCategoryItem) => {
+        return (
+          <MenuItem
+            menuCategoryItem={menuCategoryItem}
+            key={menuCategoryItem?.card?.info?.name}
+          />
+        );
+      })}
+      {/* {
         return (
           <div
             key={menuCategoryItem?.card?.info?.name}
@@ -33,9 +35,9 @@ const MenuItemsList = (props) => {
 
               <button
                 onClick={() => handleAddItem(menuCategoryItem)}
-                className="ml-2 border-black border-[1px] rounded-md shadow-sm"
+                className="ml-2 w-20 border-black border-[1px] rounded-md shadow-md"
               >
-                Add +
+                Add
               </button>
             </div>
 
@@ -43,12 +45,12 @@ const MenuItemsList = (props) => {
               <img
                 alt="menu item"
                 src={CDN_URL + menuCategoryItem?.card?.info?.imageId}
-                className="w-28"
+                className="w-28 rounded-md"
               ></img>
             </div>
           </div>
         );
-      })}
+      } */}
     </div>
   );
 };

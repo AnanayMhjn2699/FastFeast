@@ -15,7 +15,7 @@ const SearchBar = (props) => {
     <div className="flex m-3 justify-center">
       <input
         type="text"
-        className="w-64 border-2 border-teal-200 rounded-md"
+        className="w-64 border-2 rounded-md"
         onChange={(event) => {
           //   console.log(event.target.value);
           setText(event.target.value);
@@ -26,7 +26,7 @@ const SearchBar = (props) => {
       ></input>
 
       <button
-        className=" ml-1 px-2 bg-teal-200 rounded-md"
+        className=" ml-1 px-2 bg-gray-400 hover:bg-gray-500 rounded-md"
         onClick={handleSeachClick}
       >
         Search

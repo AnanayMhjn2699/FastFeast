@@ -4,7 +4,7 @@ import CompanyLogo from "../images/Food_App_Logo.jpg";
 // Footer component for footer section
 const Footer = () => {
   return (
-    <div className="sticky top-[100vh] h-14 bg-teal-300 flex justify-center">
+    <footer className="h-14 bg-gradient-to-t from-black flex justify-center">
       <a className="flex" href="/">
         <strong className="mx-2">
           Fast<span>Feast</span>
@@ -24,7 +24,7 @@ const Footer = () => {
       >
         Ananay Mahajan
       </a>
-    </div>
+    </footer>
   );
 };
 export default Footer;

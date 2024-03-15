@@ -51,7 +51,7 @@ const Body = () => {
   return restaurantList.length === 0 ? (
     <Shimmer />
   ) : (
-    <>
+    <div className="">
       <SearchBar catchSearchText={catchSearchText} />
       <div className="ml-16 flex flex-wrap">
         {filteredRestaurantList.map((restaurant) => {
@@ -65,7 +65,7 @@ const Body = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

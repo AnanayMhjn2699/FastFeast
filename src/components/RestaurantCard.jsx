@@ -12,22 +12,15 @@ const RestaurantCard = ({
   avgRating,
 }) => {
   return (
-    <div className="w-[250px] p-4 m-4 bg-teal-100 hover:bg-teal-200 ">
+    <div className="w-[250px] p-4 m-4 hover:bg-slate-100 rounded-lg">
       <img
-        className="border rounded-lg"
+        className="border rounded-xl"
         src={CDN_URL + cloudinaryImageId}
         alt="restaurant card"
       />
       <h2 className="line-clamp-1 text-center font-bold">{name}</h2>
       <span className="flex justify-center font-medium">
-        <h4
-          className="w-6 rounded-xl ml-2"
-          style={{
-            backgroundColor: avgRating >= 4 ? "#90EE90" : "#FF474C",
-          }}
-        >
-          {avgRating}
-        </h4>
+        <h4 className="w-6 mr-4">⭐{avgRating}</h4>
         <h4 className="mx-2"> • {sla.slaString}</h4>
       </span>
       <h4 className="line-clamp-1">{cuisines.join(", ")}</h4>

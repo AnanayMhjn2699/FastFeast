@@ -6,6 +6,7 @@ import {
 import Shimmer from "./Shimmer";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 import RestaurantMenucategories from "./RestaurantMenuCategories";
+import Shimmer2 from "./Shimmer2";
 
 const RestaurantMenu = () => {
   const { resId } = useParams(); // call useParams and get value of restaurant id using object destructuring
@@ -22,7 +23,7 @@ const RestaurantMenu = () => {
     );
   //console.log(menuCategoriesArray);
   return !restaurant ? (
-    <Shimmer />
+    <Shimmer2 />
   ) : (
     <div className="text-center">
       <div className="align-middle py-5">
@@ -31,18 +32,7 @@ const RestaurantMenu = () => {
           {restaurant?.cuisines?.join(", ")}
         </p>
         <div className="flex justify-center">
-          <span
-            className="w-6 rounded-full"
-            style={
-              restaurant?.avgRating < 4
-                ? { backgroundColor: "#FF474C" }
-                : restaurant?.avgRating === "--"
-                ? { backgroundColor: "white", color: "black" }
-                : { backgroundColor: "#90EE90" }
-            }
-          >
-            {restaurant?.avgRating}
-          </span>
+          <span className="">⭐ {restaurant?.avgRating}</span>
           <span className="mx-2"> | </span>
           <span className="">{restaurant?.sla?.slaString} </span>
           <span className="mx-2"> | </span>

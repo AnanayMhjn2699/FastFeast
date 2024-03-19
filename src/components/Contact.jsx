@@ -15,10 +15,10 @@ const Contact = () => {
     setName("");
     setTimeout(() => {
       setMessage(false);
-    }, 1000);
+    }, 3000);
   };
   return (
-    <>
+    <div className="h-screen">
       <h1 className="text-center font-bold text-3xl">Contact Us</h1>
 
       <div className="flex ">
@@ -73,7 +73,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-    </>
+    </div>
   );
 };
 

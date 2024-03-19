@@ -22,7 +22,7 @@ const RestaurantMenucategories = (props) => {
               : props.data?.itemCards.length}
             )
           </span>
-          <span className="mr-10"> 🔽</span>
+          <span className="mr-10">{isClicked ? "🔼" : "🔽"}</span>
         </div>
         {/*  accordian body : creating another component for menu items(MenuItemsList) */}
         <div>

@@ -13,7 +13,7 @@ const Cart = () => {
   };
   //console.log(cartItems)
   return (
-    <div className="text-center m-4 p-4">
+    <div className="text-center m-4 p-4 h-screen">
       <h1 className="font-semibold  text-3xl">Cart</h1>
       <div className="w-6/12 m-auto">
         <button

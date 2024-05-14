@@ -6,7 +6,7 @@ export const CDN_URL =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
 export const SWIGGY_API_URL =
-  "https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.5996207&lng=77.3736349&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+  "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.5996207&lng=77.3736349&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 
 // Image CDN URL for Restaurant Menu
 export const ITEM_IMG_CDN_URL =
@@ -14,7 +14,7 @@ export const ITEM_IMG_CDN_URL =
 
 // Swiggy API to get Restaurant Menu data with thingproxy
 export const swiggy_menu_api_URL =
-  "https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.5996207&lng=77.3736349&restaurantId=";
+  "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.5996207&lng=77.3736349&restaurantId=";
 
 // shimmer card unit
 export const shimmer_card_unit = 20;

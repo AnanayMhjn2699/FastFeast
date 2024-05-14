@@ -49,7 +49,7 @@ const MenuItem = ({ menuCategoryItem }) => {
         <img
           alt="menu item"
           src={CDN_URL + menuCategoryItem?.card?.info?.imageId}
-          className="w-28 rounded-md"
+          className="w-28 h-20 object-cover rounded-md"
         ></img>
       </div>
     </div>

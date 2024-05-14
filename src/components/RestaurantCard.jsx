@@ -14,7 +14,7 @@ const RestaurantCard = ({
   return (
     <div className="w-[250px] p-4 m-4 hover:bg-slate-100 rounded-lg">
       <img
-        className="border rounded-xl"
+        className="border rounded-xl w-56 h-32 object-cover"
         src={CDN_URL + cloudinaryImageId}
         alt="restaurant card"
       />

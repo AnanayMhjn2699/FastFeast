@@ -3,14 +3,14 @@ the only change you need to make it working is in the body component in the fetc
 Food Delivery App design skeleton(FastFeast)
 
 Header
-Logo
-Nav Items
+  Logo
+  Nav Items
 Body
-Search
-RestaurantContainer
-RestaurantCard - Img - Name of Res, Star Rating, cuisine, delery tie
+  Search
+  RestaurantContainer
+  RestaurantCard - Img - Name of Res, Star Rating, cuisine, delivery time
 Footer
-Copyright
-Links
-Address
-Contact
+  Copyright
+  Links
+  Address
+  Contact
